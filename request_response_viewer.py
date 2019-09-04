@@ -2,7 +2,7 @@
 import netfilterqueue
 import scapy.all as scapy
 
-def set_load(packet, load)
+def set_load(packet, load):
     packet[scapy.Raw].load = load
     del packet[scapy.IP].len
     del packet[scapy.IP].chksum
